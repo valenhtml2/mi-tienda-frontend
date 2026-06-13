@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Ropa | [Pon el nombre de tu empresa aquí]</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo">[Pon el nombre de tu empresa aquí]</a>
+            
+            <nav class="nav-menu">
+                <a href="#" class="category-btn active" data-category="todos">Todos</a>
+                <a href="#" class="category-btn" data-category="remeras">Remeras</a>
+                <a href="#" class="category-btn" data-category="pantalones">Pantalones</a>
+                <a href="#" class="category-btn" data-category="camperas">Camperas</a>
+            </nav>
+
+            <div class="nav-icons">
+                <div class="cart-icon-container" id="cart-icon-trigger">
+                    <i class='bx bx-shopping-bag'></i>
+                    <span id="cart-count">0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Nueva Colección 2026</h1>
+            <p>Diseño, comodidad y estilo en un solo lugar.</p>
+            <a href="#productos" class="btn-primary">Ver Catálogo</a>
+        </div>
+    </section>
+
+    <main class="container" id="productos">
+        <h2 class="section-title">Nuestras Prendas</h2>
+        
+        <div class="products-grid" id="products-container">
+            </div>
+    </main>
+
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Tu Carrito</h3>
+            <i class='bx bx-x close-cart' id="close-cart"></i>
+        </div>
+
+        <div class="cart-body" id="cart-items-container">
+            </div>
+
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total-amount">$0.00</span>
+            </div>
+            <button class="btn-checkout" id="btn-checkout">Proceder al Pago</button>
+        </div>
+    </div>
+    <div class="cart-overlay" id="cart-overlay"></div>
+
+    <div class="modal" id="checkout-modal">
+        <div class="modal-content">
+            <i class='bx bx-x close-modal' id="close-modal"></i>
+            <h2>Finalizar Pedido</h2>
+            <form id="checkout-form">
+                <div class="form-group">
+                    <label for="name">Nombre Completo</label>
+                    <input type="text" id="name" required placeholder="Ej. Juan Pérez">
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" id="email" required placeholder="ejemplo@correo.com">
+                </div>
+                <div class="form-group">
+                    <label for="address">Dirección de Envío</label>
+                    <input type="text" id="address" required placeholder="[Pon tu calle y altura aquí]">
+                </div>
+                <button type="submit" class="btn-submit">Confirmar Compra</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-info">
+                <h3>[Pon el nombre de tu empresa aquí]</h3>
+                <p>Dirección: [Pon la dirección física de tu empresa aquí]</p>
+                <p>Teléfono: [Pon el teléfono de tu empresa aquí]</p>
+                <p>Email: [Pon el email de tu empresa aquí]</p>
+            </div>
+            <div class="footer-socials">
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 [Pon el nombre de tu empresa aquí]. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
