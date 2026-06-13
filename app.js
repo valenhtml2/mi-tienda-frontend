@@ -1,8 +1,8 @@
 // IMPORTANTE CONFIGURACIÓN:
 // Reemplaza esto por tu Public Key real de Mercado Pago (Prod o Sandbox)
-const MP_PUBLIC_KEY = "Pon tus datos aquí"; 
+const MP_PUBLIC_KEY = "APP_USR-5d5f8e9c-fa44-48e6-8549-82a226ac26b2"; 
 // Reemplaza esto por la URL que te dará Render cuando subas el backend
-const BACKEND_URL = "Pon tus datos aquí"; 
+const BACKEND_URL = "https://tienda-pagos-30sg.onrender.com"; 
 
 const productos = [
     { id: 1, title: "Remera Oversize Minimal", price: 25000, category: "remeras", image: "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=500" },
